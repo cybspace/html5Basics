@@ -1,0 +1,40 @@
+html {
+    background-color: #19b5fe;
+}
+
+h2 {
+    color: #19b5fe;
+}
+
+h2:after {
+    background-color: #19b5fe;
+}
+
+header {
+    background-image: linear-gradient(rgba(25, 181, 254, 1), rgba(54, 215, 183, 1));
+}
+
+.nav {
+	background-image: linear-gradient(rgba(25, 181, 254, 1), rgba(25, 183, 251, 1));
+}
+
+.slider:before {
+	background-color: #19b5fe;
+}
+
+.section-avatars {
+    background-color: #19b5fe;
+}
+
+.goal-logo {
+    color: #19b5fe;
+}
+
+.contact-col a:hover,
+.contact-col a:active {
+    color: #19b5fe;
+}
+
+.contact-logo {
+    color: #19b5fe;
+}

@@ -1,0 +1,40 @@
+html {
+    background-color: #f64747;
+}
+
+h2 {
+    color: #F64747;
+}
+
+h2:after {
+    background-color: #F64747;
+}
+
+header {
+    background-image: linear-gradient(rgba(246, 71, 71, 1), rgba(242, 121, 53, 1));
+}
+
+.nav {
+	background: #F64747;
+}
+
+.slider:before {
+	background-color: #f64747;
+}
+
+.section-avatars {
+    background-color: #f64747;
+}
+
+.goal-logo {
+    color: #f64747;
+}
+
+.contact-col a:hover,
+.contact-col a:active {
+    color: #f64747;
+}
+
+.contact-logo {
+    color: #f64747;
+}

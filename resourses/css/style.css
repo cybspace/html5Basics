@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    background-color: #f64747;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div {
+    overflow: hidden;
+}
+
+/*------------------------------
+REUSABLE COMPONENTS
+------------------------------*/
+
+h1 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+h1:hover {
+    color: #ECECEC;
+}
+
+h2 {
+    font-size: 290%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 60px;
+    color: #F64747;
+}
+
+h2:after {
+    display: block;
+    height: 4px;
+    background-color: #F64747;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.section {
+    padding: 60px 0;
+    /*background-image: linear-gradient(rgba(242, 121, 53, 1), rgb(60, 36, 248));*/
+    background-color: #FFF;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.article p {
+    color: #22313F;
+    font-size: 120%;
+    line-height: 145%;
+    word-spacing: 1px;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*------------------------------
+HEADER
+------------------------------*/
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(246, 71, 71, 1), rgba(242, 121, 53, 1));
+    overflow: hidden;
+}
+
+.hero-text {
+    position: relative;
+    margin-top: 150px;
+    font-size: 650%
+}
+
+/*-----NAVIGATION-------*/
+
+.nav {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background: #F64747;
+	z-index: 999;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav ul {
+    list-style-type: none;
+    position: relative;
+    float: right;
+}
+
+.nav li {
+    display: inline-block;
+	position: relative;
+}
+
+.nav a {
+	padding: 15px;
+    font-size: 150%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav li a:link,
+.nav li a:visited {
+    text-decoration: none;
+    color: #22313F;
+    text-transform: uppercase;
+}
+
+.nav li a:hover,
+.nav li a:active {
+    color: #ECECEC;
+}
+
+
+.nav.nav-shrink a {
+	padding: 5px;
+	font-size: 100%;
+}
+
+.nav.nav-shrink .switch {
+	width: 38px;
+	height: 22px;
+}
+
+.nav.nav-shrink .slider:before {
+	height: 16px;
+	width: 16px;
+	left: 3px;
+	bottom: 3px;
+}
+
+
+.nav.nav-shrink input:checked + .slider:before {
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
+}
+
+/*-------- SWITCHER -------*/
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ECECEC;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #f64747;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+input:checked + .slider {
+	background-color: #ECECEC;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #ECECEC;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/*------------------------------
+ABOUT US
+------------------------------*/
+
+.section-avatars {
+    padding: 0;
+    background-color: #f64747;
+}
+
+.section-avatars ul {
+    list-style: none;
+    width: 100%;
+}
+
+.section-avatars ul li {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+}
+
+.section-avatars ul li img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.29);
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-avatars ul li img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*------------------------------
+OUR GOALS
+------------------------------*/
+
+.goals {
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.goals h3 {
+    font-size: 160%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    width: 60%;
+    float: left;
+    margin-right: 25px;
+}
+
+.goal-logo {
+    font-size: 360%;
+    color: #f64747;
+    width: 40%;
+}
+
+.goals p {
+    margin-top: 40px;
+    line-height: 150%;
+}
+
+/*------------------------------
+QUOTES
+------------------------------*/
+
+.section-quotes {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/galaxy-red.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: #ECECEC;
+	padding: 40px;
+}
+
+blockquote {
+	font-style: italic;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 20px
+}
+
+blockquote:before {
+	content: "\0022";
+	font-size: 250%;
+	position: absolute;
+	display: block;
+	top: -25px;
+	left: -20px;
+}
+
+cite {
+	margin: 25px 0;
+	font-size: 80%;
+	display: block;
+	position: relative;
+	height: 50px;
+}
+
+cite span {
+	display: block;
+	width: 73%;
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-70%, -50%);
+	vertical-align: middle;
+}
+
+cite img {
+	display: block;
+	width: 25%;
+	border-radius: 50%;
+}
+
+/*------------------------------
+CO-OPERATION
+------------------------------*/
+
+.section-cooperation {
+	background-color: #F4F4F4;
+}
+
+.contact-col {
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.contact-col h3 {
+    font-size: 160%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.contact-col  p {
+    margin-top: 40px;
+    line-height: 150%;
+}
+
+.contact-logo {
+    font-size: 160%;
+    min-width: 35px;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #f64747;
+}
+
+.contact-col a:link,
+.contact-col a:visited {
+	margin-left: 10px;
+    text-decoration: none;
+    color: #22313F;
+    transition: color 0.3s;
+    padding: 10px 10px 0px 0px;
+    font-style: italic;
+}
+
+.contact-col a:hover,
+.contact-col a:active {
+    color: #f64747;
+}
