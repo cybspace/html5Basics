@@ -11,6 +11,7 @@ html {
     background-color: #f64747;
     background-attachment: fixed;
     background-size: cover;
+	color: #333;
 }
 
 div {
@@ -20,16 +21,16 @@ div {
 /*------------------------------
 REUSABLE COMPONENTS
 ------------------------------*/
-
 h1 {
-    font-weight: 100;
-    letter-spacing: 1px;
-    display: inline-block;
-    transition: color 0.2s;
+	font-size: 350%;
+	font-weight: 300;
+	color: #ECECEC;
+	transition: all 0.3s;
+	margin: 0;
 }
 
 h1:hover {
-    color: #ECECEC;
+	color: #333;
 }
 
 h2 {
@@ -52,7 +53,7 @@ h2:after {
 }
 
 .section {
-    padding: 60px 0;
+    padding: 120px 0 60px 0;
     /*background-image: linear-gradient(rgba(242, 121, 53, 1), rgb(60, 36, 248));*/
     background-color: #FFF;
 }
@@ -83,7 +84,7 @@ h2:after {
 HEADER
 ------------------------------*/
 
-header {
+.header {
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(rgba(246, 71, 71, 1), rgba(242, 121, 53, 1));
@@ -92,8 +93,19 @@ header {
 
 .hero-text {
     position: relative;
-    margin-top: 150px;
-    font-size: 650%
+    margin-top: 250px;
+}
+
+.hero-letter {
+    font-weight: 100;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: color 0.2s;
+	font-size: 1500%;
+}
+
+.hero-letter:hover {
+    color: #ECECEC;
 }
 
 /*-----NAVIGATION-------*/
@@ -109,6 +121,7 @@ header {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	padding: 2%;
 }
 
 .nav ul {
@@ -142,10 +155,18 @@ header {
     color: #ECECEC;
 }
 
+.nav.nav-shrink {
+	padding: 0.5%;
+	box-shadow: 0 0 5px #333;
+}
 
 .nav.nav-shrink a {
-	padding: 5px;
-	font-size: 100%;
+	padding: 7px;
+	font-size: 120%;
+}
+
+.nav.nav-shrink h1 {
+	font-size: 150%;
 }
 
 .nav.nav-shrink .switch {
@@ -172,6 +193,7 @@ header {
 .switch {
 	position: relative;
 	display: inline-block;
+	float: right;
 	width: 60px;
 	height: 34px;
 	-webkit-transition: all 0.3s;
@@ -261,6 +283,10 @@ ABOUT US
 /*------------------------------
 OUR GOALS
 ------------------------------*/
+
+.article {
+	margin-bottom: 60px;
+}
 
 .goals {
     padding: 5px;
@@ -389,4 +415,34 @@ CO-OPERATION
 .contact-col a:hover,
 .contact-col a:active {
     color: #f64747;
+}
+
+form {
+	width: 60%;
+	margin-left: 20%;
+}
+
+input[type="submit"],
+input[type="submit"]:visited {
+	display: block;
+	width: 110px;
+	font-size: 100%;
+	font-weight: 300;
+	text-decoration: none;
+	padding: 10px 5px;
+	border: 0;
+	border-radius: 10px;
+	background-color: #f64747;
+	color: #ECECEC;
+	margin: 0 auto;
+	outline: none;
+}
+
+input[type="submit"]:hover {
+	color: #333;
+}
+
+input[type="submit"]:active {
+	color: #333;
+	background-color: #eb4646;
 }

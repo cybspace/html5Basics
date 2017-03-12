@@ -10,7 +10,7 @@ h2:after {
     background-color: #F64747;
 }
 
-header {
+.header {
     background-image: linear-gradient(rgba(246, 71, 71, 1), rgba(242, 121, 53, 1));
 }
 
@@ -37,4 +37,12 @@ header {
 
 .contact-logo {
     color: #f64747;
+}
+
+input[type="submit"] {
+	background-color: #f64747;
+}
+
+input[type="submit"]:active {
+	background-color: #eb4646;
 }

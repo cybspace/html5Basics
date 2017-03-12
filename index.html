@@ -3,36 +3,44 @@
         <link href="vendors/css/grid.css" rel="stylesheet">
         <link href="vendors/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&amp;subset=cyrillic" rel="stylesheet">
+        <link href="vendors/css/normalize.css" rel="stylesheet">
+        <link href="vendors/css/google-forms.css" rel="stylesheet">
         <link href="resourses/css/style.css" rel="stylesheet">
         <link href="resourses/css/switch-style-red.css" rel="stylesheet" id="switch-style">
         <script defer="" src="resourses/dart/style-switcher.dart.js"></script>
         <title>KOD1's Homepage</title>
     </head>
     <body>
-        <header>
+        <div class="header">
             <div class="nav">
                 <div class="row">
-                    <label class="switch">
-                        <input type="checkbox" id="style-switcher">
-                        <div class="slider"></div>
-                    </label>
-                    <!--i class="ion-earth logo"></i-->
-                    <ul>
-                        <li><a href="#about-us">About us</a></li>
-                        <li><a href="#our-goals">Our goals</a></li>
-                        <li><a href="#co-op">Co-op</a></li>
-                    </ul>
+                   <div class="col span-3-of-8">
+                   		<h1>K0D#1</h1>
+                   </div>
+                   <div class="col span-4-of-8 menu">
+                   		<ul>
+							<li><a href="#about-us">About us</a></li>
+							<li><a href="#our-goals">Our goals</a></li>
+							<li><a href="#co-op">Co-op</a></li>
+                    	</ul>
+                   </div>
+                   <div class="col span-1-of-8">
+						<label class="switch">
+							<input type="checkbox" id="style-switcher">
+							<div class="slider"></div>
+						</label>
+                   </div>
                 </div>
             </div>
             <div class="row hero-text">
-                <h1>H</h1><h1>e</h1><h1>l</h1><h1>l</h1><h1>o</h1><h1>,</h1><br><h1>w</h1><h1>o</h1><h1>r</h1><h1>l</h1><h1>d</h1><h1>!</h1>
+                <span class="hero-letter">H</span><span class="hero-letter">e</span><span class="hero-letter">l</span><span class="hero-letter">l</span><span class="hero-letter">o</span><span class="hero-letter">,</span><br><span class="hero-letter">w</span><span class="hero-letter">o</span><span class="hero-letter">r</span><span class="hero-letter">l</span><span class="hero-letter">d</span><span class="hero-letter">!</span>
             </div>
-        </header>
+        </div>
 
         <div class="section" id="about-us">
             <div class="row article">
                 <h2>About us</h2>
-                <p>We are The Master Minds of The Universe, who travel through time and space in search of the truth! We have many friends on our side, but often get into some troubles! You may punch us in the face, you may destroy our homes, you may even try to kill us, but we always rise again and strike back! Our goal is to  unveil the real destiny of the human race and the human himself. We will spreading the truth until everyone knows it!</p>
+                <p>We are The Master Minds of The Universe, who travel through time and space in search of the truth! We have many friends on our side, but often get into some troubles! You may punch us in the face, you may destroy our homes, you may even try to kill us, but we always rise again and strike back! Our goal is to  unveil the real destiny of the human race and the human himself. We will be spreading the truth until everyone knows it!</p>
             </div>
         </div>
 
@@ -143,7 +151,7 @@
 							<label for="name">Name</label>
 						</div>
 						<div class="col span-2-of-3">
-							<input type="text" name="name" class="form-input">
+							<input type="text" name="name" id="name" placeholder="Your name" required>
 						</div>
 					</div>
 					<div class="row">
@@ -151,7 +159,84 @@
 							<label for="email">E-mail</label>
 						</div>
 						<div class="col span-2-of-3">
-							<input type="email" name="email" class="form-input">
+							<input type="email" name="email" id="email" placeholder="Your email" required>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="birthday">Birthday</label>
+						</div>
+						<div class="col span-2-of-3">
+							<div class="col span-1-of-3">
+								<select name="month" id="birthday" required>
+									<option value="empty" selected hidden="true">Month</option>
+									<option value="january">January</option>
+									<option value="february">February</option>
+									<option value="march">March</option>
+									<option value="april">April</option>
+									<option value="may">May</option>
+									<option value="june">June</option>
+									<option value="march">July</option>
+									<option value="march">August</option>
+									<option value="march">September</option>
+									<option value="march">October</option>
+									<option value="march">November</option>
+									<option value="march">December</option>
+								</select>
+							</div>
+							<div class="col span-1-of-3">
+								<input type="number" name="day" placeholder="Day" max="31" min="1" required>
+							</div>
+							<div class="col span-1-of-3">
+								<input type="number" name="year" placeholder="Year" min="1900" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Gender</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="radio" name="gender" id="male"><label for="male">Male</label>
+							<input type="radio" name="gender" id="female"><label for="female">Female</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="find-us">How did you find us?</label>
+						</div>
+						<div class="col span-2-of-3">
+							<div class="col span-1-of-3">
+								<select name="find-us" id="find-us">
+									<option value="friends" selected>Friends</option>
+									<option value="search">Search engine</option>
+									<option value="newspaper">Newspaper</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="subscribe">Newsletter</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="checkbox" name="subscribe" id="subscribe" checked>
+							<label for="subscribe">Yes, please!</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="review">Spare some words</label>
+						</div>
+						<div class="col span-2-of-3">
+							<textarea name="review" id="review" placeholder="Leave a review" required></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-3-of-3">
+							<input type="submit" value="Send it">
 						</div>
 					</div>
 				</form>
