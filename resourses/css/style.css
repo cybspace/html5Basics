@@ -18,6 +18,10 @@ div {
     overflow: hidden;
 }
 
+a {
+	text-decoration: none;
+}
+
 /*------------------------------
 REUSABLE COMPONENTS
 ------------------------------*/
@@ -27,6 +31,7 @@ h1 {
 	color: #ECECEC;
 	transition: all 0.3s;
 	margin: 0;
+	padding: 0;
 }
 
 h1:hover {
@@ -145,7 +150,6 @@ HEADER
 
 .nav li a:link,
 .nav li a:visited {
-    text-decoration: none;
     color: #22313F;
     text-transform: uppercase;
 }
@@ -405,7 +409,6 @@ CO-OPERATION
 .contact-col a:link,
 .contact-col a:visited {
 	margin-left: 10px;
-    text-decoration: none;
     color: #22313F;
     transition: color 0.3s;
     padding: 10px 10px 0px 0px;
@@ -428,14 +431,14 @@ input[type="submit"]:visited {
 	width: 110px;
 	font-size: 100%;
 	font-weight: 300;
-	text-decoration: none;
 	padding: 10px 5px;
 	border: 0;
 	border-radius: 10px;
 	background-color: #f64747;
 	color: #ECECEC;
 	margin: 0 auto;
-	outline: none;
+	outline: none;	
+	transition: all 0.3s;
 }
 
 input[type="submit"]:hover {
@@ -445,4 +448,51 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
 	color: #333;
 	background-color: #eb4646;
+}
+
+/*------------------------------
+FOOTER
+------------------------------*/
+
+.footer {
+	height: auto;
+	box-shadow: 0 0 5px #333;
+	padding-top: 15px;
+}
+
+.footer .social {
+	text-align: right;
+	font-size: 130%;
+}
+
+.footer .social ul li:last-of-type {
+	margin: 0;
+}
+
+.footer ul {
+	list-style: none;
+}
+
+.footer ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer li a:link,
+.footer li a:visited {	
+	padding: 10px;
+	color: #ECECEC;
+	transition: all 0.3s;
+}
+
+.footer li a:hover,
+.footer li a:active {	
+	color: #333;
+}
+
+.footer .copyright {
+	text-align: center;
+	padding: 15px 0;
+	color: #ECECEC;
+	font-size: 60%;
 }

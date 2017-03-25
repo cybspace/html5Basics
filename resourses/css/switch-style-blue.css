@@ -26,6 +26,10 @@ h2:after {
     background-color: #19b5fe;
 }
 
+.section-quotes {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/galaxy-blue.jpg);
+}
+
 .goal-logo {
     color: #19b5fe;
 }
